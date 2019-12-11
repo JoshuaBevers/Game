@@ -1,3 +1,0 @@
-import OverworldScene from "./scene-config/overworld-menu";
-export var SceneStack = [new OverworldScene()];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2NlbmUtc3RhY2suanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvc2NlbmUtc3RhY2sudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsT0FBTyxjQUFjLE1BQU0sK0JBQStCLENBQUM7QUFFM0QsTUFBTSxDQUFDLElBQU0sVUFBVSxHQUFZLENBQUMsSUFBSSxjQUFjLEVBQUUsQ0FBQyxDQUFDIn0=
