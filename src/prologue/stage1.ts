@@ -4,7 +4,7 @@ import { recieveIItem } from "../items/add-item";
 import { Player } from "../init/STATE";
 import { potion } from "../items/potions";
 import { Talizam, Breaker } from "../init/STATE";
-import { cityOptions, changeLocation } from "../engine/locationChange";
+import { cityOptionsFinder, changeLocation } from "../engine/locationChange";
 import { battleSetup } from "../battle/createBattle";
 import { runBattle } from "../battle/combat";
 
@@ -18,10 +18,17 @@ export default class Prologue extends Scene {
   }
 
   async run() {
-    const encounter1 = await battleSetup(Player, Player); // fights self.
     console.log("This is Prologue");
-    console.log(Player._location + " : This is the players current location.");
-    await runBattle(encounter1);
+    //cityOptions();
+    await changeLocation();
+    console.log("Divide line");
+    console.log(Player._location);
+    await changeLocation();
+    //await cityOptionsFinder();
+    console.log("Divide line");
+    console.log(Player._location);
+
+    console.log("Passed the location set.");
   }
 }
 
@@ -32,3 +39,5 @@ async function cart() {
       " Right? I think I've seen you're face around here before."
   );
 }
+
+//await runBattle(encounter1); //this is code to start a battle based on encounter one setup.

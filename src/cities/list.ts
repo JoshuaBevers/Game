@@ -9,7 +9,7 @@ export class Talizam implements ICity {
   constructor() {
     this.name = "Talizam";
     this.description = "This is TALIZAM!";
-    this.connectedCities = ["Breaker", "Null"];
+    this.connectedCities = ["Breaker", "Breaker"];
   }
 }
 
@@ -21,6 +21,6 @@ export class Breaker implements ICity {
   constructor() {
     this.name = "Breaker";
     this.description = "This is BREAKER!!";
-    this.connectedCities = ["Talizam", "Second Null"];
+    this.connectedCities = ["Talizam", "Talizam"];
   }
 }

@@ -1,0 +1,10 @@
+for (i = 0; i < cities.length; i++) {
+    var check = cities[i];
+    console.log(check);
+    console.log(i);
+    if (cities.find(x => cities[i].name === Player._location)) {
+      return check;
+    } else {
+      console.log("we've reached the else.");
+    }
+  }
