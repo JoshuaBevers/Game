@@ -3,9 +3,7 @@ import * as Locations from "../cities/list";
 import { recieveIItem } from "../items/add-item";
 import { Player } from "../init/STATE";
 import { potion } from "../items/potions";
-import { Talizam, Breaker } from "../init/STATE";
 //import { cityOptionsFinder, changeLocation } from "../engine/locationChange";
-import { battleSetup } from "../battle/createBattle";
 import { runBattle } from "../battle/combat";
 import { Battle } from "../battle/init";
 
@@ -19,8 +17,9 @@ export default class Prologue extends Scene {
   }
 
   async run() {
-    const bat = new Battle(Player, Player);
-    await runBattle(bat);
+    const battleYourself = new Battle(Player, Player);
+    await cart();
+    await runBattle(battleYourself);
   }
 }
 
@@ -28,7 +27,7 @@ async function cart() {
   console.log(
     "Hey, you. You're finally awake. You're " +
       Player.name +
-      " Right? I think I've seen you're face around here before."
+      " Right? I think I've seen your face around here before. I'mma gonna kill ya."
   );
 }
 

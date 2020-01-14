@@ -9,7 +9,6 @@ import fs from "fs";
 
 //exports the created the player.
 export const Player = new Adventurer();
-
 // exports locations. This might need to be broken up depending on how many locations.
 export var Talizam = new Location.Talizam();
 export var Breaker = new Location.Breaker();

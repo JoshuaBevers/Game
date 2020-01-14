@@ -24,7 +24,7 @@ async function askQuestions(Battle: Battle, Actor: Actor) {
       choices: [
         { title: Actor.moves[0].id, value: Actor.moves[0].id },
         { title: Actor.moves[1].id, value: Actor.moves[1].id }
-        //{ title: battle.pokemonA.moves[2].name }
+        //{ title: Actor.moves[2].id, value: Actor.moves[2].id }
       ],
       initial: 1
     }
