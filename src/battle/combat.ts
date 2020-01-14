@@ -17,6 +17,5 @@ export async function runBattle(Battle: Battle) {
     const damage = await fightCalc(Player, Opponent, move); //requires move to work.
     applyDamage(Player, damage);
     console.log("This is the battle loop.");
-    Player.stats.hp = 0;
   }
 }

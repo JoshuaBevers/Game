@@ -4,9 +4,10 @@ import { recieveIItem } from "../items/add-item";
 import { Player } from "../init/STATE";
 import { potion } from "../items/potions";
 import { Talizam, Breaker } from "../init/STATE";
-import { cityOptionsFinder, changeLocation } from "../engine/locationChange";
+//import { cityOptionsFinder, changeLocation } from "../engine/locationChange";
 import { battleSetup } from "../battle/createBattle";
 import { runBattle } from "../battle/combat";
+import { Battle } from "../battle/init";
 
 export default class Prologue extends Scene {
   async onEnter() {
@@ -18,17 +19,8 @@ export default class Prologue extends Scene {
   }
 
   async run() {
-    console.log("This is Prologue");
-    //cityOptions();
-    await changeLocation();
-    console.log("Divide line");
-    console.log(Player._location);
-    await changeLocation();
-    //await cityOptionsFinder();
-    console.log("Divide line");
-    console.log(Player._location);
-
-    console.log("Passed the location set.");
+    const bat = new Battle(Player, Player);
+    await runBattle(bat);
   }
 }
 

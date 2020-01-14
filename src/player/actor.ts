@@ -14,7 +14,7 @@ export class Actor {
   element: string;
   type: string;
   moves: IMove[];
-  _location: string;
+
   inventory: {}[]; //this should probably be made into a IItem.
 
   constructor(level: number, species: string, name: string, type: string) {
@@ -26,12 +26,12 @@ export class Actor {
     this.moves = [];
     this.element = "null";
     this.inventory = [];
-    this._location = "";
     // this.location = [];
   }
-  get location() {
-    return cities.find(x => x.name === this._location);
-  }
+  // get location() {
+  //   return cities.find(x => x.name === this._location);
+  // }
+
   // static deserialize(data: any) {
   //   return new Actor(data.level, data.species, data.name, data.type);
   // }

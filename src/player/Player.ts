@@ -13,6 +13,5 @@ export class Adventurer extends Actor {
     this.element = "Normal";
     this.type = "Normal";
     this.moves = [tackle, quickattack];
-    this._location = "Talizam";
   }
 }
